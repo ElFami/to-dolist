@@ -1,0 +1,986 @@
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                       Profile                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+/* #editProfile{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.updateProfile{
+  align-items: center;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+.inputPhoto{
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url(https://preview.redd.it/remade-floor-texture-v0-0p88jov6t0sa1.jpg?width=600&format=pjpg&auto=webp&s=630c81787cba8084fe7c4f59e8591a5ccc04fec4);
+  border: black solid 2px;
+  border-radius: 100px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.photo{
+  width: 90px;
+  margin-left: -20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.yourPicture{
+  text-align: center;
+  align-items: center;
+  font-family: "Righteous", sans-serif;
+  font-size: 29px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+#editBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  --mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/280/731/830/patterns-textures-stripes-1500x1000-video-games-bioshock-hd-art-wallpaper-preview.jpg);
+  padding: 30px;
+  border-radius: 10px;
+  border: rgb(43, 43, 2) solid 7px;
+  margin-left: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#usernameChange .userChange{
+  color: #000;
+  margin-top: 10px;
+}
+
+#usernameChange h4{
+  text-align: center;
+  align-items: center;
+}
+
+#emailChange .userChange{
+  color: #000;
+  margin-top: 10px;
+}
+
+#emailChange h4{
+  text-align: center;
+  align-items: center;
+}
+
+
+#passwordChange .userChange{
+  color: #000;
+  margin-top: 10px;
+}
+
+#passwordChange h4{
+  text-align: center;
+  align-items: center;
+}
+/* Profile picture styling */
+#editBox img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  object-fit: cover;
+  margin-right: 30px; /* Space between image and form */
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                        Search                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+#search{
+  margin-top: -10px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+  
+}
+
+#search input[type="text"]{
+  color: #000;
+  margin-top: -10px;
+  background-image: url(https://media.istockphoto.com/id/499688604/photo/luxury-background-gray.jpg?s=612x612&w=0&k=20&c=7Mx0cqWZMt2mW8qf_tktQLiC3ODol5ueLXVPg952ztg=);
+}
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                          List                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+.profileContainer {
+  display: flex;
+  align-items: end; /* Aligns items to the bottom of the container */
+  justify-content: flex-end; /* Aligns content to the right */
+  position: relative; /* Establishes a positioning context for child elements */
+  padding-top: -20px;
+}
+
+.profile img {
+  /* padding-top: 30px; */
+  margin-top: 40px;
+  width: 200px; /* Set to desired size */
+  height: 100px; /* Set to desired size */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  position: absolute; /* Allows the image to be positioned behind the link */
+  top: 0; /* Aligns to the top of the container */
+  right: 0; /* Aligns to the left of the container */
+  z-index: 1; /* Makes sure the picture is behind the link */
+}
+
+.profileUpdate img {
+  /* padding-top: 30px; */
+  margin-top: 40px;
+  width: 80px; /* Set to desired size */
+  height: 100px; /* Set to desired size */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  position: absolute; /* Allows the image to be positioned behind the link */
+  top: 0; /* Aligns to the top of the container */
+  right: 62px; /* Aligns to the left of the container */
+  z-index: 1; /* Makes sure the picture is behind the link */
+  margin-left: 60px;
+}
+
+.profile a {
+  position: relative; /* Positions the link relative to its original position */
+  z-index: 2; /* Ensures the link appears above the profile picture */
+}
+
+#menu img{
+  width: 345px;
+  height: 200px;
+  padding-top: 35px;
+  margin-top: -75px;
+  margin-left: -110px;
+}
+
+#menu input{
+  background-color: #f3e4db;
+}
+#todo{
+  text-align: center;
+  margin-top: -5%;
+}
+.banner{
+  width: 50%;
+  height: 50%;
+}
+#container {
+  display: flex; /* Keep items in a row */
+  justify-content: space-between; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  padding-left: 15%; /* Adds padding around the container */
+  gap: 20%; /* Adds space between flex items */
+  width: 80%; /* Set a width for the container (adjust as needed) */
+  max-width: 1000px; /* Optional: Set a maximum width for larger screens */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+}
+
+
+
+#list {
+  flex-grow: 1; /* Allow the list to take up remaining space */
+  border-width: #000000 1;
+  overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+  padding: 10px; /* Optional: Add padding around the list */
+  /* border: 1px solid #ccc; Optional: Border for better visibility */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                          Body                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+.marquee{
+  color: wheat;
+  font-size: x-large;
+  margin-top: -7%;
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 8px;
+  background-color: #000000;
+  opacity: 0.5;
+}
+#Register {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 100px 100px 100px 100px;
+  padding: 88px;
+  background-image: url("https://fitzysgametime.wordpress.com/wp-content/uploads/2017/10/1611-2k_bioshock-the-collection_bio1_lighthouse-0.jpg?w=1200");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body{
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  padding-top: 0;
+  background-image: url("https://fitzysgametime.wordpress.com/wp-content/uploads/2017/10/1611-2k_bioshock-the-collection_bio1_lighthouse-0.jpg?w=1200");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Dashboard {
+  display: flex;
+}
+
+#Login {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 100px;
+  padding: 88px;
+  background-image: url("https://fitzysgametime.wordpress.com/wp-content/uploads/2017/10/1611-2k_bioshock-the-collection_bio1_lighthouse-0.jpg?w=1200");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                        Assets                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+.sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 40%;
+  padding-left: 17%;
+  padding-top: 9%;
+  z-index: -3;
+}
+
+.Paper {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 2%;
+  padding-top: 2%;
+  z-index: 1;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                          Task                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+#menu {
+  display: flex;
+  justify-content: space-between; /* Space between input/button and the sign */
+  align-items: center; /* Align items in the center vertically */
+  padding-top: 20px;
+}
+
+#logOut{
+  text-align: right;
+  padding-right: 6%;
+  
+}
+
+#logOut a{
+  text-decoration: none;
+  color: #ccc;
+  z-index: 20;
+}
+#logOut a:hover{
+  text-decoration: none;
+  color: #0092ac;
+  cursor: pointer;
+  z-index: 20;
+  opacity: 0.1;
+}
+
+#logOuts{
+  text-align: center;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+#logOuts a{
+  text-decoration: none;
+  color: #ccc
+}
+#logOuts a:hover{
+  text-decoration: none;
+  color: #ccc;
+  cursor: pointer;
+  opacity: 0.7;
+}
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                          List                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+#list {
+  font-size: large;
+  color: black;
+  /* text-shadow: 2px 2px #525252; */
+  --mask: 
+  linear-gradient(to top,#0000 40px,#000 0),
+  radial-gradient(40px,#000 98%,#0000) bottom/74px 80px;
+  -webkit-mask: var(--mask);
+        mask: var(--mask);
+  background-image: url("data:image/jpeg;base64,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");
+  /* border: #000000 1; */
+  border-radius: 5px;
+  align-items: end;
+  text-align: center;
+  padding: 2%;
+  width: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.to-do{
+  font-family: "Shadows Into Light", cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: block;  /* Remove default bullets if necessary */
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: block; /* Ensure each item stays on a separate line */
+  margin-bottom: 10px; /* Add spacing between items if needed */
+  
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                          Text                                         ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+.warning-box {
+  display: none;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+.show {
+  display: block;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                     Register/Login                                    ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+#registerBox {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.2);  */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  filter: drop-shadow(10px);
+  padding-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: -16vh;
+  border-radius: 30px;
+  /* backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3); */
+}
+
+#loginBox {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.2);  */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  filter: drop-shadow(10px);
+  padding-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: -20vh;
+  border-radius: 30px;
+  /* backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3); */
+}
+
+#regis {
+  width: 50%;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                         Button                                        ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+
+.twoButton {
+  display: flex;
+  gap: 25px; /* Adjust gap between buttons */
+  justify-content: center; /* Center the buttons */
+}
+
+#logreg {
+  display: inline-block;
+}
+
+#regis input,
+#regis button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+#regis input,
+#regis button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+#logins input,
+#logins button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+#Register input[type="text"],
+#Register input[type="email"],
+#Register input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+#Login input[type="email"],
+#Login input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  color: 
+  aliceblue;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]:hover {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  color: 
+  aliceblue;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#menu input {
+  color: #000000;
+}
+#logreg button[type="submit"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  box-shadow: 0 0 0 2px rgb(54, 54, 54);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="submit"] svg {
+  position: absolute;
+  width: 24px;
+  fill: greenyellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="submit"] .arr-1 {
+  right: 16px;
+}
+
+button[type="submit"] .arr-2 {
+  left: -25%;
+}
+
+button[type="submit"] .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="submit"] .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #000000;
+  border-radius: 100px;
+}
+
+button[type="submit"]:hover .arr-1 {
+  right: -25%;
+}
+
+button[type="submit"]:hover .arr-2 {
+  left: 16px;
+}
+
+button[type="submit"]:hover .text {
+  transform: translateX(12px);
+}
+
+button[type="submit"]:hover svg {
+  fill: #212121;
+}
+
+button[type="submit"]:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+button[type="submit"]:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+#logreg button[type="button"] {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 16px;
+  margin-left: 80px;
+  margin-top: -16px;
+  transform: rotate(-13deg);
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); /* Ensures the button only takes up as much width as necessary */
+  max-width: 200px; /* Optional: Constrain the maximum width */
+}
+
+
+button[type="button"] svg {
+  position: absolute;
+  width: 24px;
+  fill: greenyellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="button"] .arr-1 {
+  right: 16px;
+}
+
+button[type="button"] .arr-2 {
+  left: -25%;
+}
+
+button[type="button"] .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="button"] .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button[type="button"]:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #000000;
+  border-radius: 100px;
+}
+
+button[type="button"]:hover .arr-1 {
+  right: -25%;
+}
+
+button[type="button"]:hover .arr-2 {
+  left: 16px;
+}
+
+button[type="button"]:hover .text {
+  transform: translateX(12px);
+}
+
+button[type="button"]:hover svg {
+  fill: #212121;
+}
+
+button[type="button"]:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+button[type="button"]:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px 12px;
+  min-width: 10em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  padding: 8px 16px;
+  transform: translateY(0);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button:active .button-top {
+  transform: translateY(6px);
+}
+
+.button-top::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  background-image: radial-gradient(#cd3f64, #9d3656);
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.2),
+    0 1px 2px 1px rgba(255, 255, 255, 0.2);
+  transition-property: border-radius, padding, width, transform;
+  transition-duration: 0.2s;
+}
+
+.button:active .button-top::after {
+  border-radius: 6px;
+  padding: 0 2px;
+}
+
+.button-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 8px / 16px 16px 8px 8px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  box-sizing: content-box;
+  background-color: #803;
+  background-image: radial-gradient(
+      4px 8px at 4px calc(100% - 8px),
+      rgba(255, 255, 255, 0.25),
+      transparent
+    ),
+    radial-gradient(
+      4px 8px at calc(100% - 4px) calc(100% - 8px),
+      rgba(255, 255, 255, 0.25),
+      transparent
+    ),
+    radial-gradient(16px at -4px 0, white, transparent),
+    radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5),
+    inset 0 -1px 3px 3px rgba(0, 0, 0, 0.4);
+  transition-property: border-radius, padding-top;
+  transition-duration: 0.2s;
+}
+
+.button:active .button-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
+}
+
+.button-base {
+  position: absolute;
+  z-index: -2;
+  top: 4px;
+  left: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.buttonDel-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonDel-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.buttonDel-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.buttonDel-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 100%;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@media (min-width: 768px) {
+  .buttonDel-front {
+    font-size: 0.75rem;
+    /* padding: 12px 42px; */
+  }
+}
+
+.buttonDel-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.buttonDel-pushable:hover .buttonDel-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.buttonDel-pushable:active .buttonDel-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.buttonDel-pushable:hover .buttonDel-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.buttonDel-pushable:active .buttonDel-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.buttonDel-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*  
+||---------------------------------------||-----||---------------------------------------||
+||                                       Responsive                                      ||
+||---------------------------------------||-----||---------------------------------------||
+*/
+.strikethrough {
+  text-decoration: line-through;
+  color: rgb(155, 0, 0); /* Optional: change text color to gray */
+  display: block;
+}
+
+.strikethrough span, h   {
+  text-decoration: none; /* Ensures the button itself doesn't get the line-through */
+}
+
+@media screen and (max-width: 768px) {
+  #Register input[type="text"],
+  #Register input[type="email"],
+  #Register input[type="password"] {
+    width: 100%; /* Keep full width on smaller screens */
+    padding: 12px; /* Increase padding for better touch interaction */
+    border-radius: 50px; /* Adjust border radius for aesthetics */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #Register input[type="text"],
+  #Register input[type="email"],
+  #Register input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+}
